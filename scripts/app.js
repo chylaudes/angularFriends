@@ -11,7 +11,7 @@ function config (  $routeProvider,   $locationProvider  )  {
   $locationProvider.html5Mode(true);
   $routeProvider
     .when(site_prefix + '/', {
-      templateUrl: 'templates/index.html',
+      templateUrl: site_prefix +'templates/index.html',
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
     })
