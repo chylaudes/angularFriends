@@ -7,6 +7,7 @@ angular.module('friendsJeopardyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'n
 
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
+  console.log('configing');
   $routeProvider
     .when('/', {
       templateUrl: 'templates/index.html',
