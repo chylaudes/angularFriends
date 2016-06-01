@@ -7,9 +7,10 @@ angular.module('friendsJeopardyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'n
 
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
+   var site_prefix = '/angularFriends';
   $locationProvider.html5Mode(true);
   $routeProvider
-    .when('/', {
+    .when(site_prefix + '/', {
       templateUrl: 'templates/index.html',
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
