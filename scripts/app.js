@@ -8,7 +8,7 @@ angular.module('friendsJeopardyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'n
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
-    .when('/', {
+    .when('/angularFriends', {
       templateUrl: 'templates/index.html',
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
@@ -19,7 +19,7 @@ function config (  $routeProvider,   $locationProvider  )  {
       controllerAs: 'friendsIndexCtrl'
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/angularFriends'
     });
   $locationProvider
     .html5Mode({
