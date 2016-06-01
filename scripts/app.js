@@ -12,10 +12,10 @@ function config (  $routeProvider,   $locationProvider  )  {
       templateUrl: 'templates/index.html',
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
-    })
-    .otherwise({
-      redirectTo: '/'
     });
+    // .otherwise({
+    //   redirectTo: '/'
+    // });
   $locationProvider
     .html5Mode({
       enabled: true,
