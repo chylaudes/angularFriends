@@ -13,6 +13,11 @@ function config (  $routeProvider,   $locationProvider  )  {
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
     })
+    .when('/angularFriends', {
+      templateUrl: 'templates/index.html',
+      controller: 'FriendsIndexController',
+      controllerAs: 'friendsIndexCtrl'
+    })
     .otherwise({
       redirectTo: '/'
     });
