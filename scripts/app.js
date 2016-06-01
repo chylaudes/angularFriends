@@ -8,8 +8,8 @@ angular.module('friendsJeopardyApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'n
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
-    .when('/angularFriends/', {
-      templateUrl: 'angularFriends/templates/index.html',
+    .when('/', {
+      templateUrl: 'templates/index.html',
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
     })
