@@ -9,7 +9,7 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
     .when('/angularFriends', {
-      templateUrl: 'templates/index.html',
+      templateUrl: 'index.html',
       controller: 'FriendsIndexController',
       controllerAs: 'friendsIndexCtrl'
     })
